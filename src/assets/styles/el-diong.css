@@ -1,0 +1,119 @@
+.factore-dialong {
+    background: rgba(0, 0, 0, .7);
+    /* background-image:url(../image/bg_statistics_middle_b.png); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 6px;
+    box-shadow: rgb(0 113 241) 0px 0px 0.26042vw !important;
+}
+
+.factore-dialong .el-dialog__header {
+    display: flex;
+    align-items: center;
+}
+
+.factore-dialong .el-dialog__header {
+    padding: 10px 25px;
+}
+
+.factore-dialong .dialog-header {
+    width: 50%;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.factore-dialong .dialong-header-span {
+    display: flex;
+    align-items: center;
+}
+
+.factore-dialong .dialong-header-span i {
+    font-size: 26px;
+    color: #d04a0e;
+    margin-right: 5px;
+}
+
+.factore-dialong .el-dialog__headerbtn {
+    top: 10px;
+    right: 25px;
+}
+
+.factore-dialong .el-dialog__title {
+    color: #fff;
+}
+
+.factore-dialong:not(.is-fullscreen) {
+    margin-top: 14vh !important;
+}
+
+.factore-dialong .el-dialog__headerbtn .el-dialog__close {
+    color: #fff;
+    font-size: 24px;
+}
+
+.factore-dialong .el-dialog__headerbtn .el-dialog__close:hover {
+    color: #d04a0e;
+}
+
+.factore-dialong .el-dialog__body {
+    padding: 10px 20px;
+    height: 620px;
+    color: #fff;
+}
+
+.factore-dialong .inputstart {}
+
+.factore-dialong .inputend {}
+
+.factore-dialong .el-icon-minus {
+    margin: 0 5px;
+}
+
+.factore-dialong .el-form-item__label {
+    color: #fff;
+    font-size: 14px;
+}
+
+.factore-dialong>.el-input--medium .el-input__inner {
+    height: 30px;
+    line-height: 30px;
+}
+
+.factore-dialong .el-col {
+    /* margin-bottom: 0px; */
+}
+
+.factore-dialong .el-form-item {
+    margin-bottom: 0px;
+}
+
+.factore-dialong .el-col-11 {
+    width: 35.83333%;
+}
+
+.factore-dialong .el-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.factore-dialong .el-row>div {
+    margin-bottom: 5px;
+}
+
+.factore-dialong .el-range-editor--medium.el-input__inner {
+    width: 300px;
+    height: 36px;
+}
+
+.factore-dialong .el-range-editor--medium .el-range-separator {
+    line-height: 30px;
+}
+
+.factore-dialong .el-range-editor--medium .el-range__icon,
+.el-range-editor--medium .el-range__close-icon {
+    line-height: 30px;
+}

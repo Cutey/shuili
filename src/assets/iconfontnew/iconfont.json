@@ -1,0 +1,226 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "952",
+      "name": "云上传",
+      "font_class": "yunshangchuan",
+      "unicode": "f0020",
+      "unicode_decimal": 983072
+    },
+    {
+      "icon_id": "1211",
+      "name": "云下载",
+      "font_class": "yunxiazai",
+      "unicode": "f011a",
+      "unicode_decimal": 983322
+    },
+    {
+      "icon_id": "145454",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "145723",
+      "name": "视频_填充",
+      "font_class": "shipintianchong",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "534308",
+      "name": "教学成果",
+      "font_class": "jiaoxuechengguo",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "577384",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    },
+    {
+      "icon_id": "666906",
+      "name": "综合",
+      "font_class": "zonghe",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "995974",
+      "name": "共享",
+      "font_class": "gongxiang",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "1368661",
+      "name": "3d",
+      "font_class": "d",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "2076242",
+      "name": " 图片",
+      "font_class": "tupian1",
+      "unicode": "e889",
+      "unicode_decimal": 59529
+    },
+    {
+      "icon_id": "3868281",
+      "name": "数据看板",
+      "font_class": "shujukanban",
+      "unicode": "eb66",
+      "unicode_decimal": 60262
+    },
+    {
+      "icon_id": "5387496",
+      "name": "主题",
+      "font_class": "zhuti",
+      "unicode": "eaed",
+      "unicode_decimal": 60141
+    },
+    {
+      "icon_id": "5387672",
+      "name": "云上传",
+      "font_class": "yunshangchuan1",
+      "unicode": "eb2c",
+      "unicode_decimal": 60204
+    },
+    {
+      "icon_id": "5388010",
+      "name": "云下载_o",
+      "font_class": "yunxiazai_o",
+      "unicode": "ebb4",
+      "unicode_decimal": 60340
+    },
+    {
+      "icon_id": "6858401",
+      "name": "2D",
+      "font_class": "D",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "6858480",
+      "name": "3D",
+      "font_class": "D1",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "8922351",
+      "name": "音频",
+      "font_class": "yinpin",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "8989216",
+      "name": "数据看板",
+      "font_class": "shujukanban1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9466862",
+      "name": "水资源",
+      "font_class": "shuiziyuan",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "9697213",
+      "name": "专题应用",
+      "font_class": "icon_xinyong_xianxing_jijin-",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "10506197",
+      "name": "数据共享",
+      "font_class": "shujugongxiang",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "11356220",
+      "name": "3D",
+      "font_class": "D2",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "11372723",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e8bc",
+      "unicode_decimal": 59580
+    },
+    {
+      "icon_id": "13015627",
+      "name": "10-图片展示",
+      "font_class": "-tupianzhanshi",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "17448865",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "17654832",
+      "name": "资源",
+      "font_class": "ziyuan",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "17830631",
+      "name": "视频",
+      "font_class": "shipin1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "20421041",
+      "name": "行政区划管理",
+      "font_class": "hangzhengquhuaguanli",
+      "unicode": "e886",
+      "unicode_decimal": 59526
+    },
+    {
+      "icon_id": "20603227",
+      "name": "整体图标svg_流域",
+      "font_class": "zhengtitubiaosvg_liuyu",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "22361491",
+      "name": "成果信息",
+      "font_class": "chengguoxinxi",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "24056865",
+      "name": "音频",
+      "font_class": "yinpin1",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    }
+  ]
+}

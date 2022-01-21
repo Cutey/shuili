@@ -1,0 +1,191 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1299977",
+      "name": "Videotape-1",
+      "font_class": "10luxiang-1",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "1299988",
+      "name": "Videotape-2",
+      "font_class": "10luxiang-2",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "1489089",
+      "name": "截图",
+      "font_class": "jietu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "1586154",
+      "name": "升序",
+      "font_class": "shengxu",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "2678594",
+      "name": "对比",
+      "font_class": "duibi",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "4933870",
+      "name": "面",
+      "font_class": "mian",
+      "unicode": "ec1e",
+      "unicode_decimal": 60446
+    },
+    {
+      "icon_id": "5650847",
+      "name": "测面",
+      "font_class": "cemian",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "6270931",
+      "name": "截图",
+      "font_class": "jietu1",
+      "unicode": "e795",
+      "unicode_decimal": 59285
+    },
+    {
+      "icon_id": "6598375",
+      "name": "截图",
+      "font_class": "jietu2",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "6997357",
+      "name": "坐标拾取",
+      "font_class": "zuobiaoshiqu",
+      "unicode": "e70e",
+      "unicode_decimal": 59150
+    },
+    {
+      "icon_id": "7179829",
+      "name": "拾取查询",
+      "font_class": "shiquchaxun",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "11426532",
+      "name": "拾取",
+      "font_class": "shiqu",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "11674007",
+      "name": "多时相",
+      "font_class": "duoshixiang",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "13638737",
+      "name": "面积",
+      "font_class": "mianji",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "14710301",
+      "name": "多时相_icon",
+      "font_class": "duoshixiang_icon",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "14712842",
+      "name": "多时相_icon",
+      "font_class": "duoshixiang_icon1",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "14930425",
+      "name": "Aim中心点",
+      "font_class": "Aimzhongxindian",
+      "unicode": "e71e",
+      "unicode_decimal": 59166
+    },
+    {
+      "icon_id": "15824157",
+      "name": "【视图】测面积",
+      "font_class": "shitucemianji",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "16588075",
+      "name": "降序",
+      "font_class": "jiangxu",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "16588077",
+      "name": "升序",
+      "font_class": "shengxu1",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    },
+    {
+      "icon_id": "17654816",
+      "name": "截图",
+      "font_class": "jietu3",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "18171091",
+      "name": "地图尺子,测量,测距,距离",
+      "font_class": "map-ruler",
+      "unicode": "ea07",
+      "unicode_decimal": 59911
+    },
+    {
+      "icon_id": "18171092",
+      "name": "地图尺子,测量,测距,距离",
+      "font_class": "map-ruler-full",
+      "unicode": "ea08",
+      "unicode_decimal": 59912
+    },
+    {
+      "icon_id": "22382333",
+      "name": "地图卷帘",
+      "font_class": "ditujuanlian",
+      "unicode": "edcd",
+      "unicode_decimal": 60877
+    },
+    {
+      "icon_id": "22383428",
+      "name": "场景卷帘",
+      "font_class": "changjingjuanlian",
+      "unicode": "ede7",
+      "unicode_decimal": 60903
+    },
+    {
+      "icon_id": "22386316",
+      "name": "地图卷帘",
+      "font_class": "ditujuanlian1",
+      "unicode": "ee26",
+      "unicode_decimal": 60966
+    }
+  ]
+}

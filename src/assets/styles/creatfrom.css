@@ -1,0 +1,57 @@
+/* 表格外部 */
+
+.fromheight {
+    width: 100%;
+    height: calc(100% - 55px);
+}
+
+
+/* label值 */
+
+.fromheight .el-form-item__label {
+    width: 100px !important;
+    height: 36px !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fromheight .el-form-item__content {
+    margin-left: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+
+/* input框 */
+
+.fromheight .el-input__inner {
+    width: 100% !important;
+    /* margin-right: 10px; */
+}
+
+
+/* 平均水深父元素 */
+
+.fatherinput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* 平均水深中间横杠元素 */
+
+.el-icon-minus {
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+/* 行高 */
+
+.el-form-item--medium .el-form-item__label {
+    line-height: 20px;
+}

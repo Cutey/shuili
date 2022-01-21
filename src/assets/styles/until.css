@@ -1,0 +1,146 @@
+.closei {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.searchcomend {
+    width: 410px;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    padding: 15px 10px 10px 10px;
+    border-radius: 7px;
+    background: rgba(8, 13, 25, 0.67);
+    /* background-image: url('../image/bg_statistics_middle_t.png'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.close-warp {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../image/bg_service_status.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3px;
+}
+
+.warp-comnde {
+    width: 100%;
+    height: calc(100% - 48px);
+    background: rgba(8, 13, 25, 0.87);
+    border-radius: 10px;
+}
+
+.warp-comden {
+    width: 100%;
+    border-bottom: 1px solid #0875bf;
+    height: 50%;
+}
+
+.warp-comden-noborder {
+    width: 100%;
+    height: 50%;
+}
+
+.right-moudle {
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    box-shadow: 0 0 10px 3px rgb(20 142 195 / 80%);
+    background: rgba(8, 13, 25, 0.67);
+    padding: 15px 10px 10px 10px;
+    border-radius: 7px;
+    /* background-image: url('../image/bg_statistics_middle_t.png'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sousuo-warp {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sousuo-warp i {
+    font-size: 26px;
+    color: #d04a0e;
+    margin-right: 5px;
+}
+
+.sondiv {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.shuili-comed {
+    height: 70%;
+    width: 100%;
+}
+
+.history-comed {
+    height: 50%;
+}
+
+.warp-header {
+    height: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    align-items: center;
+}
+
+.history-warp {
+    height: calc(100% - 35px);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center
+}
+
+.warp-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #0eb9ea;
+}
+
+.headerlist {
+    width: 2px;
+    height: 20px;
+    background: #d85d0f;
+    margin: 0 10px 0 0;
+}
+
+.claearspan {
+    color: aqua;
+    cursor: pointer;
+}
+
+.el-checkbox {
+    color: #fff;
+}
+
+.boederbottom {
+    border-bottom: 1px solid #0875bf;
+}

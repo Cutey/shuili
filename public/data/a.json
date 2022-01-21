@@ -1,0 +1,200 @@
+{
+    "metadata": {},
+    "sources": {
+        "googleimage": {
+            "tiles": [
+                "https://ds.piesat.cn:20002/pie-cloud/tiles/publish/arcgis/below/5f9fe1f878b44fbcb41b9987282a7581/{z}/{x}/{y}"
+            ],
+            "maxzoom": 13,
+            "type": "raster",
+            "minzoom": 0
+        },
+        "全国水系流域": {
+            "type": "vector",
+            "url": "https://cloudtest.piesat.cn/engine-server/pie-engine/vector/dynamic/source?id=04b627ab1a0e1000"
+        }
+    },
+    "center": [
+        116.46,
+        34
+    ],
+    "layers": [
+        {
+            "layout": {
+                "visibility": "none"
+            },
+            "paint": {
+                "background-color": "rgba(255, 255, 255, 1)"
+            },
+            "id": "背景",
+            "type": "background"
+        },
+        {
+            "layout": {
+                "visibility": "visible"
+            },
+            "id": "googleimages",
+            "source": "googleimage",
+            "type": "raster"
+        },
+        {
+            "paint": {
+                "line-width": 3,
+                "line-opacity": 1,
+                "line-color": "#2A14CD"
+            },
+            "id": "全国水系流域",
+            "source": "全国水系流域",
+            "source-layer": "04b627ab1a0e1000",
+            "type": "line"
+        },
+        {
+            "id": "全国水系流域_txt",
+            "source": "全国水系流域",
+            "source-layer": "04b627ab1a0e1000",
+            "type": "symbol"
+        }
+    ],
+    "sprite": "https://cloudtest.piesat.cn/engine-server/v1/style/savefile/sprite323208430008274944",
+    "zoom": 3,
+    "glyphs": "https://ds.piesat.cn:20002/font/sys/{fontstack}/{range}.pbf",
+    "id": "yh0tslcz2",
+    "version": 8
+},
+
+
+{
+    "tiles": [
+        "https://cloudtest.piesat.cn/engine-server//pie-engine/vector/dynamic/tiles?id=04b627ab1a0e1000&z={z}&x={x}&y={y}"
+    ],
+    "tilestats": {
+        "layerCount": 1,
+        "layers": [
+            {
+                "attributeCount": 9,
+                "geometry": "MultiLineString",
+                "attributes": [
+                    {
+                        "attribute": "oid_",
+                        "type": "number"
+                    },
+                    {
+                        "attribute": "name",
+                        "type": "string"
+                    },
+                    {
+                        "attribute": "symbolid",
+                        "type": "number"
+                    },
+                    {
+                        "attribute": "altmode",
+                        "type": "number"
+                    },
+                    {
+                        "attribute": "base",
+                        "type": "number"
+                    },
+                    {
+                        "attribute": "clamped",
+                        "type": "number"
+                    },
+                    {
+                        "attribute": "extruded",
+                        "type": "number"
+                    },
+                    {
+                        "attribute": "snippet",
+                        "type": "string"
+                    },
+                    {
+                        "attribute": "shape_leng",
+                        "type": "number"
+                    }
+                ],
+                "layer": "04b627ab1a0e1000"
+            }
+        ]
+    },
+    "maxzoom": 22,
+    "center": [
+        105.49705123900004,
+        37.56500434900005
+    ],
+    "bounds": [
+        75.9082717900001,
+        21.57208252,
+        135.085830688,
+        53.5579261780001
+    ],
+    "format": "pbf",
+    "type": "overlay",
+    "version": 2,
+    "minzoom": 0,
+    "vector_layers": [
+        {
+            "tilestats": {
+                "layerCount": 1,
+                "layers": [
+                    {
+                        "attributeCount": 9,
+                        "geometry": "MultiLineString",
+                        "attributes": [
+                            {
+                                "attribute": "oid_",
+                                "type": "number"
+                            },
+                            {
+                                "attribute": "name",
+                                "type": "string"
+                            },
+                            {
+                                "attribute": "symbolid",
+                                "type": "number"
+                            },
+                            {
+                                "attribute": "altmode",
+                                "type": "number"
+                            },
+                            {
+                                "attribute": "base",
+                                "type": "number"
+                            },
+                            {
+                                "attribute": "clamped",
+                                "type": "number"
+                            },
+                            {
+                                "attribute": "extruded",
+                                "type": "number"
+                            },
+                            {
+                                "attribute": "snippet",
+                                "type": "string"
+                            },
+                            {
+                                "attribute": "shape_leng",
+                                "type": "number"
+                            }
+                        ],
+                        "layer": "04b627ab1a0e1000"
+                    }
+                ]
+            },
+            "maxzoom": 22,
+            "description": "",
+            "id": "04b627ab1a0e1000",
+            "fields": {
+                "snippet": "String",
+                "oid_": "Number",
+                "symbolid": "Number",
+                "altmode": "Number",
+                "clamped": "Number",
+                "name": "String",
+                "shape_leng": "Number",
+                "extruded": "Number",
+                "base": "Number"
+            },
+            "minzoom": 0
+        }
+    ]
+}
