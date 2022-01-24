@@ -338,7 +338,7 @@ export default {
                     }
                     if(row.center_x && row.center_y){
                          let objcenter = [row.center_x , row.center_y]
-                         that.ceratmappoint(objcenter,row.obj_code,i)
+                         that.ceratmappoint(objcenter,row.obj_code,i,row)
                     }
                 }
                  mapUtil.createLayer(that.pointlist,'tspoints',6,null,'Geojson'); //添加图层
@@ -436,8 +436,8 @@ export default {
             
         },
         // 添加中心点位展示
-        ceratmappoint(pointgeo,nameid,index,listlength){
-            
+        ceratmappoint(pointgeo,nameid,index,e){
+
             let  pointmap = mapUtil.createFeature('point',nameid,pointgeo)
          
             let pointurl = require('../../assets/jinglingpng/blue-'+ (index+1) + '.png')
@@ -452,7 +452,8 @@ export default {
                 pointmap.setStyle(mapUtil.setStyle(pointstyleObj))
                 pointmap.name = nameid
                 pointmap.index = index
-              
+                pointmap.attribute = e
+
                this.pointlist.push(pointmap)
              
         },

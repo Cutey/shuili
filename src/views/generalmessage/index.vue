@@ -2,7 +2,7 @@
     <div class="generalmessage-warp">
         <div class="generalmessage-row" v-if="!isjuanmap">
             <!-- 地图组建 -->
-            <mapInstance />
+            <mapInstance ref="mapInstance"/>
             <!-- 搜索框 -->
             <div class="generalmessage-row-search" style="display: flex;">
                 <div  class="searchs-div" style="width:30%">
@@ -66,10 +66,17 @@
         <div v-if="isjuanmap" style="height:100%;width:100%">
             <mapserver />
         </div>
+       <!--  详情信息弹窗    -->
+       <div id="popupes" class="detailPopCommon ol-popupered">
+         <div class="title"><span class="con">信息</span><i class="el-icon-close close-btn ol-popup-closers headclose" id="popup-closers"></i></div>
+         <div id="popup-contentding" class="popup-content"></div>
     </div>
+     </div>
 </template>
 
 <script>
+import Overlay from "ol/Overlay";
+import mapUtil from "@/utils/map";
 import mapInstance from '@/components/map/mapInstance'
 import mapserver from '@/components/map/swipermap' //地图卷帘组建
 import yslbcommed from './component/yslbcommed' //要素类别模块
@@ -155,6 +162,9 @@ export default {
             slobject:null,//水利对象数据
             isjuanmap:false, //是否开启卷帘模式
             dialogshownew:false,
+
+            popupshow:false,//弹窗默认隐藏
+            headername:"",
         }
     },
     computed:{
@@ -180,10 +190,100 @@ export default {
     },
     mounted(){
         this.$nextTick(()=>{
-            
+          this.mapBindClick();
         });
     },
     methods:{
+        //地图点击事件
+        mapBindClick(){
+          let me = this;
+          let map = me.$refs.mapInstance.mapInstance;//获取地图实例
+          if (!me.mapEventKey) {
+            me.mapEventKey = map.on("singleclick", function(evt) {
+	            /*检测与视口上的像素相交的特征，并对每个相交的特征执行回调*/
+              let feature = map.forEachFeatureAtPixel(evt.pixel, function(feature) {return feature;});
+              console.log("feature",feature)
+              if (feature) {
+                me.activefeact =feature
+                let name = feature.name;
+                let coordinates = [];//整理后的经纬度
+                let attribute = feature.attribute;
+                coordinates = feature.getGeometry().getCoordinates();
+                console.log(coordinates);
+                /*弹出框的内容模板*/
+                me.eventreSourcesEx(name, attribute, coordinates, feature);
+              }
+            });
+          }
+        },
+        // 弹出框的内容模板
+        eventreSourcesEx(name, data, coodinate, feature){
+          let that = this;let loc = [];//位置
+          loc = [data.center_x, data.center_y]
+          var container = document.getElementById("popupes");//获取弹窗元素
+          var popupCloser = document.getElementById("popup-closers");//获取弹窗关闭按钮
+          let contentpanel = document.getElementById("popup-contentding");//获取弹窗内容
+          // that.popupshow = true;
+          that.headername = "";
+          let popcontent = ``;
+          /*内容待更改*/
+          popcontent =
+            "<ul class='table-content' style='width:100%;border:1px solid  #2e8aaf;border-bottom:none'>" +
+            "<li style='line-height:35px;display: flex;justify-content: space-between;border-bottom: 1px solid  #2e8aaf'>" +
+            "<span style='color:#fff;font-size: 14px;width:30%;border-right: 1px solid  #2e8aaf;width: '>名称</span>" +
+            "<span style='color:#ade909;font-size: 16px;width:70%'>" +
+              data.obj_name +
+            "</span>" +
+            "</li>" +
+            "<li style='line-height:35px;display: flex;justify-content: space-between;border-bottom: 1px solid  #2e8aaf'>" +
+            "<span style='color:#fff;font-size: 14px;width:30%;border-right: 1px solid  #2e8aaf;'>流域</span>" +
+            "<span style='color:#ade909;font-size: 16px;width:70%'>" +
+              data.river_basin +
+            "</span>" +
+            "</li>" +
+            "<li style='line-height:35px;display: flex;justify-content: space-between;border-bottom: 1px solid  #2e8aaf'>" +
+            "<span style='color:#fff;font-size: 14px;width:30%;border-right: 1px solid  #2e8aaf;'>经度</span>" +
+            "<span style='color:#ade909;font-size: 16px;width:70%'>" +
+             data.center_x+
+            "</span>" +
+            "</li>" +
+            "<li style='line-height:35px;display: flex;justify-content: space-between;border-bottom: 1px solid  #2e8aaf'>" +
+            "<span style='color:#fff;font-size: 14px;width:30%;border-right: 1px solid  #2e8aaf;'>纬度</span>" +
+            "<span style='color:#ade909;font-size: 16px;width:70%'>" +
+            data.center_x+
+            "</span>" +
+            "</li>";
+            popcontent += "</ul>";
+            that.overlay = new Overlay({
+              element: container, //绑定 Overlay 对象和 DOM 对象的
+              autoPan: true, // 定义弹出窗口在边缘点击时候可能不完整 设置自动平移效果
+              autoPanAnimation: {duration: 250 /*自动平移效果的动画时间 9毫秒）*/}
+            });
+              contentpanel.innerHTML = popcontent;
+          //设置overlay的显示位置
+          that.overlay.setPosition(coodinate);//todo未拿到位置
+          that.$refs.mapInstance.mapInstance.addOverlay(that.overlay);
+          /*that.$refs.mapInstance.mapInstance.getView().animate({
+            center: loc,
+            minZoom: 4,
+            maxZoom: 18,
+            zoom: 10.5,
+            duration: 1000
+          });*/
+          that.clearcloser(popupCloser, feature);
+        },
+        // 清除弹出框
+        clearcloser(popupCloser, feature) {
+          let that = this;
+          if (popupCloser) {
+            popupCloser.onclick = function() {
+                that.overlay.setPosition(undefined);
+                popupCloser.blur();
+                mapUtil.restoreView();
+                return false;
+            };
+          }
+        },
         //搜索按钮点击事件
         searchClick(){
              
@@ -476,4 +576,50 @@ export default {
 }
 </style>
 
+<style>
+.detailPopCommon{}
+.detailPopCommon .title{
+  width:100%;
+  height:40px;
+  background: rgba(3, 38, 66, 0.9);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  line-height:30px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detailPopCommon .title .con{
+  font-size:18px;
+  margin-left:10px;
+  color:#fff;
+}
+.detailPopCommon .title .close-btn{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.detailPopCommon .popup-content {
+  width: 390px;
+  /* height: 322px; */
+  overflow-y: auto;
+  padding: 0 10px 10px 10px;
+  margin-top: 10px;
+}
+.detailPopCommon .popup-content li{
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2e8aaf;
+  text-align: center;
+}
+.ol-popupered {
+  position: absolute;
+  background-color: rgba(16, 27, 38, 0.95) !important;
+  border-radius: 10px;
+  border: 0px;
+  bottom: 20px;
+  left: -195px;
+}
+</style>
 
